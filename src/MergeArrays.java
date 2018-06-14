@@ -21,7 +21,7 @@ public class MergeArrays {
         int s = a1.length + a2.length;
         int[] result = new int[s];
         int x = 0, y = 0;
-        
+
         for (int i = 0; i < s; i++){
             if (y == a2.length || x < a1.length && a1[x] <= a2[y]) {
                 result[i] = a1[x++];
